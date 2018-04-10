@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vivek Nag - Portfolio Site - Udacity</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onresize="navToggle()">
+        <div class="container-fluid">
+            <!-- Navigation -->
+            <nav class="nav" id="nav">
+                <span class="toggle-close-link" onclick="toggleSideBar(false)">
+                    <i class="fas fa-times"></i>
+                </span>
+                <ul class="nav-list">
+                    <li class="box-list">
+                        <div class="box color1"></div>
+                        <div class="color-name">#02b3e4</div>
+                    </li>
+                    <li class="box-list">
+                        <div class="box color2"></div>
+                        <div class="color-name">#2d3c49</div>
+                    </li>
+                    <li class="box-list">
+                        <div class="box color3"></div>
+                        <div class="color-name">#7d97ad</div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Main section -->
+            <main class="main">
+                <header class="header">
+                    <span class="toggle-link" onclick="toggleSideBar(true)">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a href="javascript:void(0);" class="brand-link">
+                        <img src="assets/udacity.png" alt="Udacity" class="brand-img" />
+                    </a>
+                    <div class="about">
+                        <h1 class="profile-name">VIVEK NAG</h1>
+                        <h4 class="profile-designation">FRONT-END NINJA</h4>
+                    </div>
+                </header>
+                <div class="main-image">
+                    <figure class="fig">
+                        <img src="assets/wireframe.jpeg" alt="Design image" class="fig-img" />
+                    </figure>
+                </div>
+                <aside class="featured-work">
+                    <h2 class="work-heading">
+                        Featured Work
+                    </h2>
+                    <div class="card-view">
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="assets/card1.jpeg" class="card-img" alt="Work 1 Image" />
+                            </div>
+                            <div class="card-heading">
+                                APPIFY
+                            </div>
+                            <div class="card-link">
+                                https://github.com/udacity/Appify/
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="assets/card2.jpeg" class="card-img" alt="Work 2 Image" />
+                            </div>
+                            <div class="card-heading">
+                                SUNFLOWER
+                            </div>
+                            <div class="card-link">
+                                https://github.com/udacity/Sunflower/
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="assets/card3.jpeg" class="card-img" alt="Work 3 Image" />
+                            </div>
+                            <div class="card-heading">
+                                BOKEH
+                            </div>
+                            <div class="card-link">
+                                https://github.com/udacity/Bokeh/
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
